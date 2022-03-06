@@ -1,5 +1,5 @@
 const fs = require('fs')
-const Abu = require('../events');
+const Asena = require('../events');
 const {MessageType, Mimetype } = require('@adiwajshing/baileys');
 const FilterDb = require('./sql/filters');
 const Config = require('../config')
