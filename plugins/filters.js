@@ -9,7 +9,7 @@ const Language = require('../language');
 const Lang = Language.getString('filters');
 
 
-Abu.addCommand({pattern: 'filter ?(.*)', fromMe: true, desc: Lang.FILTER_DESC, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'filter ?(.*)', fromMe: true, desc: Lang.FILTER_DESC, dontAddCommandList: true}, (async (message, match) => {
     match = match[1].match(/[\'\"\â€œ](.*?)[\'\"\â€œ]/gsm);
 
     if (match === null) {
@@ -29,7 +29,7 @@ Abu.addCommand({pattern: 'filter ?(.*)', fromMe: true, desc: Lang.FILTER_DESC, d
         await message.client.sendMessage(message.jid,Lang.FILTERED.format(match[0].replace(/['"]+/g, '')),MessageType.text);
     }
 }));
-Abu.addCommand({pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DESC, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DESC, dontAddCommandList: true}, (async (message, match) => {
     match = match[1].match(/[\'\"\â€œ](.*?)[\'\"\â€œ]/gsm);
     if (match === null) {
         return await message.client.sendMessage(message.jid,Lang.NEED_REPLY + '\n*Example:* ```.stop "hello"```',MessageType.text)
@@ -46,7 +46,7 @@ Abu.addCommand({pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DESC, dontA
     
 if (Config.GEAR == 'one') {  
     
-Abu.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
+Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         if(Config.BGMFILTER){
             var uri = encodeURI(match[1])
         let banned = jid.find( Jid => Jid === message.jid);
@@ -82,7 +82,7 @@ if(pattern.test(message.message)){
 }));
 }
     if (Config.GEAR == 'two') {    
-    Abu.addCommand({on: 'text', fromMe: false}, (async (message, match) => {   
+    Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {   
         if(Config.BGMFILTER){
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
@@ -117,7 +117,7 @@ if(pattern.test(message.message)){
     );
 }));
 }
-Abu.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
+Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
     if(Config.STICKERP){
     let banned = jid.find( Jid => Jid === message.jid);
     if(banned !== undefined) return
@@ -164,7 +164,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
  
-Abu.addCommand({on: 'text', fromMe: false,onlyGroup: true}, (async (message, match) => {
+Asena.addCommand({on: 'text', fromMe: false,onlyGroup: true}, (async (message, match) => {
 
     if(Config.THERI_KICK){
     let banned = jid.find( Jid => Jid === message.jid);
@@ -192,7 +192,7 @@ filtreler.map(
     }
 );
 }));
- Abu.addCommand({on: 'text', fromMe: false, onlyPm: true}, (async (message, match) => {
+ Asena.addCommand({on: 'text', fromMe: false, onlyPm: true}, (async (message, match) => {
 
     if(Config.PLKS){
 const array = afnp 
