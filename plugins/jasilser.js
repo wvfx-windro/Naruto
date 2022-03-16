@@ -27,11 +27,11 @@ Neotro.addCommand({pattern: 'help', fromMe: false, dontAddCommandList: true}, (a
         {title: 'Bᴏᴛ Gʀᴏᴜᴘ Dᴇsᴄʀɪᴘᴛɪᴏɴ', description: "Nɪʏᴀᴍᴀᴍ Iɴɪ Eʟʟᴀᴠᴀʀᴋᴋᴜᴍ Bᴀᴅʜᴀᴋᴀ Mᴀɴ \n\n\n☃️ᴏɴɴᴜᴍ ɪʟʟᴀ ɢʀᴏᴜᴘ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ😁 \n\n  ", rowId:" rowid7"}
        ]
        
-       const sections = [{title: "Aʙᴜ sᴇʀ ❤️", rows: rows}]
+       const sections = [{title: "ɴᴀʀᴜᴛᴏ ❤️", rows: rows}]
        
        const button = {
-        buttonText: '💚Aʙᴜ Bᴏᴛ💚',
-        description: "💖✻Aʙᴜ Sᴇʀ Bᴏᴛ✻💖",
+        buttonText: 'ɴᴀʀᴜᴛᴏ',
+        description: "ɴᴀʀᴜᴛᴏ ᴘᴜʙʟɪᴄ ʙᴏᴛ",
         sections: sections,
         listType: 1
        }
