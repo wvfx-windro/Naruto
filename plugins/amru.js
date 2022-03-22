@@ -27,7 +27,7 @@ var afnplk = '```⏱ Time :' + plk_say + '```\n\n ```📅 Date :' + plk_here + '
       
       const buttonMessage = {
           contentText: ' ʜɪ ʙʀᴏ---🧚\n\n```Bᴏᴛ Nᴀᴍᴇ:``` *'+Config.LIST+'*\n\n💙 ᴛɪᴍᴇ   : ```' + plk_say + '```\n🥶 ᴅᴀᴛᴇ : ```' + plk_here + '```\n\n☃️ ᴄʟɪᴄᴋ ᴍᴇɴᴜ ᴀɴᴅ ᴇɴᴊᴏʏ ᴛʜᴇ ɴᴀʀᴜᴛᴏ ʙᴏᴛ\n', 
-          footerText: '✮ ɴᴀʀᴜᴛᴏ💕',
+          footerText: '✮ɴᴀʀᴜᴛᴏ💕',
           buttons: buttons,
           headerType: 1
       }
